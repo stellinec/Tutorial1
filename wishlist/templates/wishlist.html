@@ -17,11 +17,13 @@
         <th>{{barang.harga_barang}}</th>
         <th>{{barang.deskripsi}}</th>
     </tr>
-    ...<h5>Sesi terakhir login: {{ last_login }}</h5>
-<button><a href="{% url 'wishlist:logout' %}">Logout</a></button>
+   
+
 ...
 {% endfor %}
 </table>
+...<h5>Sesi terakhir login: {{ last_login }}</h5>
+<button><a href="{% url 'wishlist:logout' %}">Logout</a></button>
 
 
 {% endblock content %}
