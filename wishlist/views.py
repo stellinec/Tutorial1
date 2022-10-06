@@ -30,7 +30,8 @@ def show_json(request):
 def show_json_by_id(request,  id):
     data = BarangWishlist.objects.filter(pk=id)
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
-    
+def show_wishlist_ajax(request):
+    return render(request, "wishlist_ajax.html")
 def register(request):
     form = UserCreationForm()
 
